@@ -9,3 +9,56 @@ body {
 h1 {
 	text-align: center;
 }
+
+	
+.tym {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: column ;
+}
+
+.osoba {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border: solid 0.5px gray;
+	border-radius: 20px;
+	padding: 20px;
+	width: 100%;
+	box-shadow: 0 3px 3px azure;
+}
+
+img {
+	border-radius: 50%;
+}
+
+
+/*Tablet*/
+
+@media (min-width:540px)and (max-width: 959px) {
+	.tym{
+		flex-wrap: wrap;
+		flex-direction: row;
+		
+	}
+	.osoba {
+		width: calc((100% - 20px)/2);
+		flex-direction: row;
+		text-align: left;
+	}
+}
+
+
+/*PC*/
+
+@media (min-width:960px) {
+	.osoba {
+	width: calc((100% - 60px)/4)
+	}
+
+	.tym {
+		flex-direction: row;
+	}
+}
